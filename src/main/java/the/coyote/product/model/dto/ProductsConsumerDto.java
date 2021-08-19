@@ -18,7 +18,7 @@ public class ProductsConsumerDto {
 	private BigDecimal price;
 	private BigDecimal inventory;
 	private String image;
-	private LocalDateTime createdAt = LocalDateTime.now();
+	private LocalDateTime createdAt;
 
 	public ProductsConsumerDto(ProductsConsumer productsConsumer) {
 		this.setId(productsConsumer.getId());

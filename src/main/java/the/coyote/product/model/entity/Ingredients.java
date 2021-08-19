@@ -40,4 +40,11 @@ public class Ingredients {
 	@Column(precision = 12, scale = 3)
 	private BigDecimal quantity;
 	
+	public Ingredients(Products products, ProductsConsumer productsConsumer, BigDecimal quantity) {
+		super();
+		this.products = products;
+		this.productsConsumer = productsConsumer;
+		this.quantity = quantity;
+	}
+	
 }
